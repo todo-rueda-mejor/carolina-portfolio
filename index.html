@@ -144,6 +144,46 @@
       text-decoration: underline;
       cursor: pointer;
     }
+
+    .videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.videos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 12px;
+}
+
+.videos p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  max-width: 300px;
+}
+
+/* Responsive: 2 columnas en tablets */
+@media (max-width: 900px) {
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 1 columna en celulares */
+@media (max-width: 600px) {
+  .videos {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 <body>
