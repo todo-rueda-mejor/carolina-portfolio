@@ -106,6 +106,7 @@
 
     .videos {
       display: grid;
+      justify-content: center;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
       padding: 1rem;
@@ -119,6 +120,7 @@
 
     .videos iframe {
       width: 100%;
+      max-width: 300px;
       height: 200px;
       border: none;
       border-radius: 12px;
@@ -129,6 +131,7 @@
       font-size: 0.95rem;
       max-width: 300px;
     }
+
 
     /* Sobre mí */
     #sobre-mi {
@@ -191,8 +194,18 @@
     @media (max-width: 600px) {
       .videos {
         grid-template-columns: 1fr;
+        padding: 1rem 0.5rem;
+      }
+
+      .videos iframe {
+        height: 180px;
+      }
+
+      .videos div {
+        max-width: 100%;
       }
     }
+    
   </style>
 </head>
 <body>
@@ -218,12 +231,12 @@
         <div>
           <h2>Portfolio</h2>
           <div class="videos">
-            <div><iframe src="https://www.youtube.com/embed/LM6Id2lLMGI?si=okbTssJTk87cdxPg" allowfullscreen></iframe><p>Sonido directo durante todo el proyecto</p></div>
-            <div><iframe src="https://www.youtube.com/embed/fcCWpHBiVUo?si=CyP2wgAxZkv6d2jW" allowfullscreen></iframe><p>Captura de audio durante la filmación</p></div>
-            <div><iframe src="https://www.youtube.com/embed/tHT6yBELeEE?si=9ECDXRYLIKtq0QZJ" allowfullscreen></iframe><p>Composición musical, diseño de sonido</p></div>
-            <div><iframe src="https://www.youtube.com/embed/SrblK_v7dNk?si=Bns9AExajHDeydh8" allowfullscreen></iframe><p>Dirección de sonido y captura, post producción</p></div>
-            <div><iframe src="https://www.youtube.com/embed/bTPrDCXdAIo?si=_BH3KD_ZVzOoLq2f" allowfullscreen></iframe><p>Restauración de audio y post producción</p></div>
-            <div><iframe src="https://www.youtube.com/embed/cCN5i923GR4?si=3wU9wvoAWHuEJWMF" allowfullscreen></iframe><p>Dirección de sonido y captura, post producción</p></div>
+            <div><iframe src="https://www.youtube.com/embed/LM6Id2lLMGI?si=okbTssJTk87cdxPg"  allowfullscreen></iframe><p>Sonido directo durante todo el proyecto</p></div>
+            <div><iframe src="https://www.youtube.com/embed/fcCWpHBiVUo?si=CyP2wgAxZkv6d2jW"  allowfullscreen></iframe><p>Captura de audio durante la filmación</p></div>
+            <div><iframe src="https://www.youtube.com/embed/tHT6yBELeEE?si=9ECDXRYLIKtq0QZJ"  allowfullscreen></iframe><p>Composición musical, diseño de sonido</p></div>
+            <div><iframe src="https://www.youtube.com/embed/SrblK_v7dNk?si=Bns9AExajHDeydh8"  allowfullscreen></iframe><p>Dirección de sonido y captura, post producción</p></div>
+            <div><iframe src="https://www.youtube.com/embed/bTPrDCXdAIo?si=_BH3KD_ZVzOoLq2f"  allowfullscreen></iframe><p>Restauración de audio y post producción</p></div>
+            <div><iframe src="https://www.youtube.com/embed/cCN5i923GR4?si=3wU9wvoAWHuEJWMF"  allowfullscreen></iframe><p>Dirección de sonido y captura, post producción</p></div>
           </div>
           <div class="volver" onclick="volverSlide()">← Volver a inicio</div>
         </div>
