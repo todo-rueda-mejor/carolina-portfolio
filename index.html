@@ -45,6 +45,11 @@
       overflow-y: auto;
       flex-shrink: 0;
     }
+    
+    ::selection {
+      background: var(--amarillo);
+      color: var(--negro);
+    }
 
     /* INICIO */
     #inicio {
@@ -97,10 +102,17 @@
 
     /* SECCIONES CON CONTENIDO */
     #portfolio, #sobre-mi {
-      background-color: var(--blanco);
       text-align: center;
       padding: 2rem 1rem 4rem;
       align-items: center;
+    }
+
+    #sobre-mi {
+      background-color: var(--verde);
+    }
+
+    #portfolio {
+      background-color: var(--blanco);
     }
 
     #portfolio h2, #sobre-mi h2 {
@@ -155,23 +167,23 @@
     }
 
     .idioma-buttons button {
-      margin: 0 0.5rem;
-      padding: 0.4rem 1rem;
-      font-size: 0.9rem;
-      background-color: var(--amarillo);
+      background: none;
       border: none;
-      border-radius: 8px;
+      color: var(--negro);
+      text-decoration: underline;
+      font-size: 0.95rem;
+      margin: 0 0.5rem;
       cursor: pointer;
-      transition: background-color 0.2s;
+      padding: 0;
+      font-weight: normal;
     }
 
     .idioma-buttons button.active {
-      background-color: var(--verde);
       font-weight: bold;
     }
 
     .idioma-buttons button:hover {
-      background-color: var(--verde);
+      text-decoration: underline;
     }
 
     /* Responsive: 2 columnas en tablets */
